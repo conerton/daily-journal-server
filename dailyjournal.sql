@@ -1,0 +1,11 @@
+CREATE TABLE `Entires` (
+    `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    `concept` TEXT NOT NULL,
+    `date` TEXT NOT NULL,
+    `entry` TEXT NOT NULL,
+    FOREIGN KEY(`mood_id`) REFERENCES `Moods`(`id`)
+);
+CREATE TABLE `Mood` (
+    `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    `moods` TEXT NOT NULL
+)
